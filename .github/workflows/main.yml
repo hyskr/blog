@@ -1,0 +1,90 @@
+name: Deploy to Qiniu
+
+on:
+  workflow_dispatch:
+
+  workflow_run:
+    workflows: ["sync-notion-to-github"]
+    types:
+      - completed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      Name: hyskr
+      Bucket_name: heziah-blog
+      Log_Url: http://rxvr8hzis.hb-bkt.clouddn.com/log.html
+      Qshell_Config: qshell_config.json
+      Log_File: log/upload.log
+      Tmp_File: log/qiniu.log
+      TZ: 'Asia/Shanghai'
+      Url: https://heziah.top/
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: Setup node and yarn
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+          cache: 'yarn'
+
+      - name: Install Qshell
+        run: yarn global add qshell
+
+      - name: Build
+        run: yarn install --frozen-lockfile && yarn run build
+
+
+      - name: Upload to Qiniu
+        run: |
+          qshell account ${{ secrets.QINIU_ACCESS_KEY }} ${{ secrets.QINIU_SECRET_KEY }} $Name
+          echo $(date) > $Tmp_File
+          qshell qupload -c 5 $Qshell_Config >> $Tmp_File
+
+      - name: Del extra files
+        run: |
+          qshell listbucket $Bucket_name -o log/bucket_list.log
+          echo "" > log/missing_files.log
+          while IFS= read -r line; do filename=$(echo $line | awk '{print $1}'); if [[ ! -f ".vitepress/dist/$filename"  && "$filename" != "upload.html" ]]; then echo "$filename" >> log/missing_files.log; fi; done < log/bucket_list.log
+          qshell batchdelete $Bucket_name --sep '\n' --force -i log/missing_files.log >> $Tmp_File
+          rm log/bucket_list.log log/missing_files.log
+
+      - name: Push log to Qiniu
+        run: |
+          cat $Tmp_File | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g" >> $Log_File
+          echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" >> $Log_File
+
+          head -n 1 $Tmp_File > $Tmp_File.1
+          awk '/ -------------Upload Result--------------/{flag=1;}flag{print; if(++n==8) exit}' $Tmp_File  | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g" | cut -d' ' -f4- >> $Tmp_File.1
+          awk '/----------------------------------------/{flag=1; next;}flag' $Tmp_File >> $Tmp_File.1
+          grep -P --color='auto' '\033\[' $Tmp_File | sed -r "s/\x1B\[([0-9]{1,2}(;[0-9]{1,2})?)?[mGK]//g"  | cut -d' ' -f4- >> $Tmp_File.1
+          mv $Tmp_File.1 $Tmp_File
+
+          qshell fput $Bucket_name upload.html $Log_File --overwrite >/dev/null
+          qshell fput $Bucket_name log.html $Tmp_File --overwrite >/dev/null
+
+      - name: Refresh CDN
+        run: |
+          echo $Url > log/url.txt
+          qshell cdnrefresh -r -i log/url.txt
+          rm log/url.txt
+
+      - name: Push log to Github
+        run: |
+          git config --local user.email $Name"@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git commit -m "upload qshell log"
+          git push
+
+      - name: Push log to Bark
+        run: |
+          INFO=$(cat $Tmp_File | sed 's/\[0m//g'| grep -Eo '(Total|Success|Failure|Skipped): +[0-9]+' | awk '{print $2}' | awk 'NR==1{Total=$1} NR==2{Success=$1} NR==3{Failure=$1} NR==4{Skipped=$1} END{printf "total=%d,suc=%d,fail=%d,skip=%d", Total, Success, Failure, Skipped}')
+          Info=$INFO
+          URL=https://api.day.app/${{secrets.BARK_TOKEN}}/Github%20Action/$Info\?icon\=https://github.githubassets.com/favicons/favicon.png\&url\=$Log_Url\&group\=gh_action\&sound\=shake
+          curl $URL
+
