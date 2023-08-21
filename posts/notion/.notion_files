@@ -1,0 +1,16 @@
+{
+  "adb8c841-72c5-4638-aeca-4954bcee177f": {
+    "files": [
+      "static-blog-build"
+    ],
+    "title": "static-blog-build",
+    "rtitle": "静态博客搭建"
+  },
+  "b2e3a47b-e7d0-4cad-9e6c-1d8b841e5aff": {
+    "files": [
+      "beijing-jiaotong-university-course-automatically"
+    ],
+    "title": "beijing-jiaotong-university-course-automatically",
+    "rtitle": "北京交通大学自动选课"
+  }
+}
