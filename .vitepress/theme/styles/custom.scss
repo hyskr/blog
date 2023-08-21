@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500&display=swap');
+@import url(./markdown.scss);
+
+@font-face {
+    font-family: "Neutraface Text";
+    src: url("/font.otf");
+    font-weight: 700;
+    font-style: normal
+}
+
+@font-face {
+    font-family: "AliPuHui";
+    src: url('/AliPuHui.woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+:root {
+    --vp-code-line-height: 1.7;
+    --vp-code-font-size: 0.875em;
+
+    --vp-code-block-color: var(--vp-c-text-dark-1);
+    --vp-code-block-bg: #292b30;
+    --vp-code-block-bg-light: #1e1e20;
+    --vp-code-block-divider-color: #000000;
+
+    --vp-code-line-highlight-color: rgba(0, 0, 0, 0.5);
+    --vp-code-line-number-color: var(--vp-c-text-dark-3);
+
+    --vp-code-line-diff-add-color: var(--vp-c-green-dimm-2);
+    --vp-code-line-diff-add-symbol-color: var(--vp-c-green);
+
+    --vp-code-line-diff-remove-color: var(--vp-c-red-dimm-2);
+    --vp-code-line-diff-remove-symbol-color: var(--vp-c-red);
+
+    --vp-code-line-warning-color: var(--vp-c-yellow-dimm-2);
+    --vp-code-line-error-color: var(--vp-c-red-dimm-2);
+
+    --vp-code-copy-code-border-color: transparent;
+    --vp-code-copy-code-bg: var(--vp-code-block-bg-light);
+    --vp-code-copy-code-hover-border-color: var(--vp-c-divider);
+    --vp-code-copy-code-hover-bg: var(--vp-code-block-bg-light);
+    --vp-code-copy-code-active-text: var(--vp-c-text-dark-2);
+
+    --vp-code-tab-divider: var(--vp-code-block-divider-color);
+    --vp-code-tab-text-color: var(--vp-c-text-dark-2);
+    --vp-code-tab-bg: var(--vp-code-block-bg);
+    --vp-code-tab-hover-text-color: var(--vp-c-text-dark-1);
+    --vp-code-tab-active-text-color: var(--vp-c-text-dark-1);
+    --vp-code-tab-active-bar-color: var(--vp-c-brand);
+
+    --vp-icon-copy: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2'/%3E%3C/svg%3E");
+    --vp-icon-copied: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' height='20' width='20' stroke='rgba(128,128,128,1)' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2m-6 9 2 2 4-4'/%3E%3C/svg%3E");
+
+}
+
+html {
+    @apply scroll-smooth;
+}
+
+body {
+    font-family: 'Noto Serif SC', serif;
+}
+
+body::after {
+	background: url('/background.png') no-repeat;
+	content: '';
+	background-repeat: no-repeat;
+	opacity: 0.05;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background-size: cover;
+    user-select: none;
+    background-position: 50% 50%;
+}
+
+.vp-doc [class*='language-'] > button.copy {
+    /*rtl:ignore*/
+    direction: ltr;
+    position: absolute;
+    top: 12px;
+    /*rtl:ignore*/
+    right: 12px;
+    z-index: 3;
+    border: 1px solid var(--vp-code-copy-code-border-color);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--vp-code-copy-code-bg);
+    opacity: 0;
+    cursor: pointer;
+    background-image: var(--vp-icon-copy);
+    background-position: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    transition: border-color 0.25s, background-color 0.25s, opacity 0.25s;
+}
+
+.vp-doc [class*='language-']:hover > button.copy,
+.vp-doc [class*='language-'] > button.copy:focus {
+    opacity: 1;
+}
+
+.vp-doc [class*='language-']:hover > span.lang, .vp-doc [class*='language-'] button.copied + span.lang {
+    opacity: 0;
+}
+
+.vp-doc [class*='language-']::before {
+    content: "" !important;
+}
+
+.vp-doc [class*='language-'] button.copied::before {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.vp-doc [class*='language-'] > button.copy:hover,
+.vp-doc [class*='language-'] > button.copy.copied {
+    border-color: var(--vp-code-copy-code-hover-border-color);
+    background-color: var(--vp-code-copy-code-hover-bg);
+}
+
+.vp-doc [class*='language-'] > button.copy.copied,
+.vp-doc [class*='language-'] > button.copy:hover.copied {
+    /*rtl:ignore*/
+    border-radius: 0 4px 4px 0;
+    background-color: var(--vp-code-copy-code-hover-bg);
+    background-image: var(--vp-icon-copied);
+}
+
+.vp-doc [class*='language-'] > button.copy.copied::before,
+.vp-doc [class*='language-'] > button.copy:hover.copied::before {
+    position: relative;
+    top: -1px;
+    /*rtl:ignore*/
+    left: -65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--vp-code-copy-code-hover-border-color);
+    /*rtl:ignore*/
+    border-right: 0;
+    border-radius: 4px 0 0 4px;
+    width: 64px;
+    height: 40px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--vp-code-copy-code-active-text);
+    background-color: var(--vp-code-copy-code-hover-bg);
+    white-space: nowrap;
+    content: 'Copied';
+}
+
+.vp-doc [class*='language-'] > span.lang {
+    position: absolute;
+    top: 2px;
+    /*rtl:ignore*/
+    right: 8px;
+    z-index: 2;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--vp-c-text-dark-3);
+    transition: color 0.4s, opacity 0.4s;
+}
+
+// .vp-doc [class*='language-']:hover > button.copy + span.lang,
+// .vp-doc [class*='language-'] > button.copy:focus + span.lang {
+//     opacity: 0;
+// }
+
+.post div[class~='language-rust']:before {
+    content: '' !important;
+}
+
+img {
+    max-height: 80vh;
+}
