@@ -1,0 +1,6 @@
+pyyaml
+notion2md
+notion_client
+python-dateutil
+python-slugify
+requests
