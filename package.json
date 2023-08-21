@@ -1,0 +1,41 @@
+{
+    "name": "heziah_blog",
+    "version": "0.0.1",
+    "description": "Heziah's Blog",
+    "main": "index.js",
+    "repository": "https://github.com/hyskr/blog",
+    "author": "Heziah",
+    "license": "None",
+    "private": true,
+    "devDependencies": {
+        "@headlessui/vue": "^1.6.1",
+        "@heroicons/vue": "^1.0.6",
+        "autoprefixer": "^10.4.7",
+        "axios": "^1.4.0",
+        "chalk": "^5.2.0",
+        "fs-extra": "^10.1.0",
+        "globby": "^11.1.0",
+        "gray-matter": "^4.0.3",
+        "postcss": "^8.4.13",
+        "postcss-import": "^14.1.0",
+        "prompt-sync": "^4.2.0",
+        "sass": "^1.51.0",
+        "tailwindcss": "^3.0.24",
+        "vitepress-plugin-mermaid": "^2.0.8"
+    },
+    "scripts": {
+        "dev": "vitepress dev",
+        "build": "vitepress build",
+        "serve": "vitepress serve",
+        "newpost": "node commands.js newpost"
+    },
+    "dependencies": {
+        "@mermaid-js/mermaid-mindmap": "^9.3.0",
+        "dayjs": "^1.11.8",
+        "gpt-3-encoder": "^1.1.4",
+        "katex": "^0.15.3",
+        "qshell": "^2.0.0",
+        "valine": "^1.4.18",
+        "vitepress": "^1.0.0-beta.3"
+    }
+}
