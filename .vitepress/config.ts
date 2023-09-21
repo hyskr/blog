@@ -45,7 +45,7 @@ async function config() {
           "meta",
           {
             property: "og:title",
-            content: "Home",
+            content: "个人学习小站",
           },
         ],
         [

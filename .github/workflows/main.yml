@@ -14,7 +14,7 @@ jobs:
     env:
       Name: hyskr
       Bucket_name: heziah-blog
-      Log_Url: http://rxvr8hzis.hb-bkt.clouddn.com/log.html
+      Log_Url: https://heziah.top/log.html
       Qshell_Config: qshell_config.json
       Log_File: log/upload.log
       Tmp_File: log/qiniu.log

@@ -4,7 +4,6 @@
         <div class="basis-full px-2 md:px-6" style="max-width: 70%; margin-left: 15%;">
             <Posts v-if="show" :posts="posts" :current-page="currentPage" @currentPageChanged="currentPageChanged" />
         </div>
-
     </div>
 </template>
 
