@@ -1,25 +1,25 @@
-Mon Sep 25 09:13:56 CST 2023
+Tue Sep 26 09:13:41 CST 2023
  -------------Upload Result--------------
                Total:        27
              Success:         6
              Failure:         0
         NotOverwrite:         0
              Skipped:        21
-            Duration:   8.389242774s
+            Duration:   9.494997139s
  ----------------------------------------
 
 See upload log at path /home/runner/.qshell/qupload/55ecd02bc623d181e800476c717a5e58/55ecd02bc623d181e800476c717a5e58.log
 Delete 'heziah-blog' => 'log.html' success
  Listing local sync dir, this can take a long time for big directory, please wait patiently
- Walk `/home/runner/work/blog/blog/.vitepress/dist` start from 2023-09-25 09:13:56.64699809 +0800 CST m=+0.006674943
+ Walk `/home/runner/work/blog/blog/.vitepress/dist` start from 2023-09-26 09:13:41.101802137 +0800 CST m=+0.006560047
  File `404.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/404.html => heziah-blog : 404.html
  File `404.png` exists in bucket, hash match, ignore this upload
  File `AliPuHui.woff2` exists in bucket, hash match, ignore this upload
  File `assets/404.md.1da7f4e4.js` exists in bucket, hash match, ignore this upload
  File `assets/404.md.1da7f4e4.lean.js` exists in bucket, hash match, ignore this upload
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/404.html` => `heziah-blog : 404.html` success
  File `assets/app.85f7d9b6.js` exists in bucket, hash match, ignore this upload
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/404.html` => `heziah-blog : 404.html` success
  File `assets/chunks/Valine.min.856cf24b.js` exists in bucket, hash match, ignore this upload
  File `assets/chunks/framework.75c8f663.js` exists in bucket, hash match, ignore this upload
  File `assets/index.md.bfd3f1ec.js` exists in bucket, hash match, ignore this upload
@@ -44,9 +44,9 @@ Delete 'heziah-blog' => 'log.html' success
  Upload file `/home/runner/work/blog/blog/.vitepress/dist/index.html` => `heziah-blog : index.html` success
  File `posts/notion/beijing-jiaotong-university-course-automatically/index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html => heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html` => `heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html` success
  File `posts/notion/static-blog-build/index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html => heziah-blog : posts/notion/static-blog-build/index.html
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html` => `heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html` success
  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html` => `heziah-blog : posts/notion/static-blog-build/index.html` success
  File `tags.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/tags.html => heziah-blog : tags.html
@@ -57,5 +57,5 @@ Delete 'heziah-blog' => 'log.html' success
              Failure:         0
         NotOverwrite:         0
              Skipped:        21
-            Duration:   8.389242774s
+            Duration:   9.494997139s
  ----------------------------------------
