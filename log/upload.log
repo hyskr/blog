@@ -13791,3 +13791,122 @@ Delete 'heziah-blog' => 'assets/tags.md.ccc513da.js' success
 Delete 'heziah-blog' => 'assets/tags.md.ccc513da.lean.js' success
 Delete 'heziah-blog' => 'log.html' success
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tue Feb 6 20:05:53 CST 2024
+Writing upload log to file /home/runner/.qshell/qupload/55ecd02bc623d181e800476c717a5e58/55ecd02bc623d181e800476c717a5e58.log
+
+2024/02/06 20:05:53.555 [I]  Listing local sync dir, this can take a long time for big directory, please wait patiently
+2024/02/06 20:05:53.555 [I]  Walk `/home/runner/work/blog/blog/.vitepress/dist` start from 2024-02-06 20:05:53.555339802 +0800 CST m=+0.005337605
+Uploading /home/runner/work/blog/blog/.vitepress/dist/404.html => 404.html [1/30, 3.3%] ...
+2024/02/06 20:05:54.214 [I]  File `404.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:05:54.214 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/404.html => heziah-blog : 404.html
+Uploading /home/runner/work/blog/blog/.vitepress/dist/404.png => 404.png [2/30, 6.7%] ...
+2024/02/06 20:05:54.528 [I]  File `404.png` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/AliPuHui.woff2 => AliPuHui.woff2 [3/30, 10.0%] ...
+2024/02/06 20:05:54.783 [I]  File `AliPuHui.woff2` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.js => assets/404.md.1da7f4e4.js [4/30, 13.3%] ...
+2024/02/06 20:05:55.085 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.js => heziah-blog : assets/404.md.1da7f4e4.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.lean.js => assets/404.md.1da7f4e4.lean.js [5/30, 16.7%] ...
+2024/02/06 20:05:55.343 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.lean.js => heziah-blog : assets/404.md.1da7f4e4.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/app.85f7d9b6.js => assets/app.85f7d9b6.js [6/30, 20.0%] ...
+2024/02/06 20:05:55.646 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/app.85f7d9b6.js => heziah-blog : assets/app.85f7d9b6.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/chunks/Valine.min.856cf24b.js => assets/chunks/Valine.min.856cf24b.js [7/30, 23.3%] ...
+2024/02/06 20:05:55.805 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.js` => `heziah-blog : assets/404.md.1da7f4e4.js` success
+2024/02/06 20:05:55.915 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/404.html` => `heziah-blog : 404.html` success
+2024/02/06 20:05:55.916 [I]  File `assets/chunks/Valine.min.856cf24b.js` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/chunks/framework.75c8f663.js => assets/chunks/framework.75c8f663.js [8/30, 26.7%] ...
+2024/02/06 20:05:56.039 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/404.md.1da7f4e4.lean.js` => `heziah-blog : assets/404.md.1da7f4e4.lean.js` success
+2024/02/06 20:05:56.216 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/chunks/framework.75c8f663.js => heziah-blog : assets/chunks/framework.75c8f663.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.js => assets/index.md.bfd3f1ec.js [9/30, 30.0%] ...
+2024/02/06 20:05:56.487 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.js => heziah-blog : assets/index.md.bfd3f1ec.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.lean.js => assets/index.md.bfd3f1ec.lean.js [10/30, 33.3%] ...
+2024/02/06 20:05:56.783 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.js` => `heziah-blog : assets/index.md.bfd3f1ec.js` success
+2024/02/06 20:05:56.797 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.lean.js => heziah-blog : assets/index.md.bfd3f1ec.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js => assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js [11/30, 36.7%] ...
+2024/02/06 20:05:56.870 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/app.85f7d9b6.js` => `heziah-blog : assets/app.85f7d9b6.js` success
+2024/02/06 20:05:57.057 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js => heziah-blog : assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js => assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js [12/30, 40.0%] ...
+2024/02/06 20:05:57.109 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/index.md.bfd3f1ec.lean.js` => `heziah-blog : assets/index.md.bfd3f1ec.lean.js` success
+2024/02/06 20:05:57.164 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/chunks/framework.75c8f663.js` => `heziah-blog : assets/chunks/framework.75c8f663.js` success
+2024/02/06 20:05:57.353 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js` => `heziah-blog : assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.js` success
+2024/02/06 20:05:57.375 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js => heziah-blog : assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.js => assets/posts_notion_static-blog-build_index.md.6e45eb33.js [13/30, 43.3%] ...
+2024/02/06 20:05:57.629 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.js => heziah-blog : assets/posts_notion_static-blog-build_index.md.6e45eb33.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js => assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js [14/30, 46.7%] ...
+2024/02/06 20:05:57.683 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js` => `heziah-blog : assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.0bd1ae76.lean.js` success
+2024/02/06 20:05:57.927 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js => heziah-blog : assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.js => assets/posts_notion_utility_index.md.2a2f06bc.js [15/30, 50.0%] ...
+2024/02/06 20:05:58.133 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.js` => `heziah-blog : assets/posts_notion_static-blog-build_index.md.6e45eb33.js` success
+2024/02/06 20:05:58.194 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.js => heziah-blog : assets/posts_notion_utility_index.md.2a2f06bc.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.lean.js => assets/posts_notion_utility_index.md.2a2f06bc.lean.js [16/30, 53.3%] ...
+2024/02/06 20:05:58.271 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js` => `heziah-blog : assets/posts_notion_static-blog-build_index.md.6e45eb33.lean.js` success
+2024/02/06 20:05:58.497 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.lean.js => heziah-blog : assets/posts_notion_utility_index.md.2a2f06bc.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/style.9b211e45.css => assets/style.9b211e45.css [17/30, 56.7%] ...
+2024/02/06 20:05:58.613 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.js` => `heziah-blog : assets/posts_notion_utility_index.md.2a2f06bc.js` success
+2024/02/06 20:05:58.753 [I]  File `assets/style.9b211e45.css` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.js => assets/tags.md.ccc513da.js [18/30, 60.0%] ...
+2024/02/06 20:05:58.794 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/posts_notion_utility_index.md.2a2f06bc.lean.js` => `heziah-blog : assets/posts_notion_utility_index.md.2a2f06bc.lean.js` success
+2024/02/06 20:05:59.057 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.js => heziah-blog : assets/tags.md.ccc513da.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.lean.js => assets/tags.md.ccc513da.lean.js [19/30, 63.3%] ...
+2024/02/06 20:05:59.323 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.lean.js => heziah-blog : assets/tags.md.ccc513da.lean.js
+Uploading /home/runner/work/blog/blog/.vitepress/dist/background.png => background.png [20/30, 66.7%] ...
+2024/02/06 20:05:59.376 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.js` => `heziah-blog : assets/tags.md.ccc513da.js` success
+2024/02/06 20:05:59.616 [I]  File `background.png` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/blog_logo.png => blog_logo.png [21/30, 70.0%] ...
+2024/02/06 20:05:59.659 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/assets/tags.md.ccc513da.lean.js` => `heziah-blog : assets/tags.md.ccc513da.lean.js` success
+2024/02/06 20:05:59.885 [I]  File `blog_logo.png` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/favicon.ico => favicon.ico [22/30, 73.3%] ...
+2024/02/06 20:06:00.180 [I]  File `favicon.ico` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/font.otf => font.otf [23/30, 76.7%] ...
+2024/02/06 20:06:00.437 [I]  File `font.otf` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/hashmap.json => hashmap.json [24/30, 80.0%] ...
+2024/02/06 20:06:00.731 [I]  File `hashmap.json` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:00.731 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/hashmap.json => heziah-blog : hashmap.json
+Uploading /home/runner/work/blog/blog/.vitepress/dist/index.html => index.html [25/30, 83.3%] ...
+2024/02/06 20:06:00.987 [I]  File `index.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:00.987 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/index.html => heziah-blog : index.html
+Uploading /home/runner/work/blog/blog/.vitepress/dist/notion_logo.png => notion_logo.png [26/30, 86.7%] ...
+2024/02/06 20:06:01.061 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/hashmap.json` => `heziah-blog : hashmap.json` success
+2024/02/06 20:06:01.552 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/index.html` => `heziah-blog : index.html` success
+2024/02/06 20:06:01.990 [I]  File `notion_logo.png` exists in bucket, hash match, ignore this upload
+Uploading /home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html => posts/notion/beijing-jiaotong-university-course-automatically/index.html [27/30, 90.0%] ...
+2024/02/06 20:06:02.253 [I]  File `posts/notion/beijing-jiaotong-university-course-automatically/index.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:02.253 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html => heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html
+Uploading /home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html => posts/notion/static-blog-build/index.html [28/30, 93.3%] ...
+2024/02/06 20:06:02.541 [I]  File `posts/notion/static-blog-build/index.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:02.541 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html => heziah-blog : posts/notion/static-blog-build/index.html
+Uploading /home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html => posts/notion/utility/index.html [29/30, 96.7%] ...
+2024/02/06 20:06:02.803 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html` => `heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html` success
+2024/02/06 20:06:02.804 [I]  File `posts/notion/utility/index.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:02.804 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html => heziah-blog : posts/notion/utility/index.html
+Uploading /home/runner/work/blog/blog/.vitepress/dist/tags.html => tags.html [30/30, 100.0%] ...
+2024/02/06 20:06:03.102 [I]  File `tags.html` exists in bucket, but hash not match, go to upload
+2024/02/06 20:06:03.102 [I]  Uploading file /home/runner/work/blog/blog/.vitepress/dist/tags.html => heziah-blog : tags.html
+2024/02/06 20:06:03.112 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html` => `heziah-blog : posts/notion/utility/index.html` success
+2024/02/06 20:06:03.126 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html` => `heziah-blog : posts/notion/static-blog-build/index.html` success
+2024/02/06 20:06:03.473 [I]  Upload file `/home/runner/work/blog/blog/.vitepress/dist/tags.html` => `heziah-blog : tags.html` success
+2024/02/06 20:06:03.474 [I]  -------------Upload Result--------------
+2024/02/06 20:06:03.474 [I]                Total:        30
+2024/02/06 20:06:03.474 [I]              Success:        21
+2024/02/06 20:06:03.474 [I]              Failure:         0
+2024/02/06 20:06:03.474 [I]         NotOverwrite:         0
+2024/02/06 20:06:03.474 [I]              Skipped:         9
+2024/02/06 20:06:03.474 [I]             Duration:   9.919207472s
+2024/02/06 20:06:03.474 [I]  ----------------------------------------
+
+See upload log at path /home/runner/.qshell/qupload/55ecd02bc623d181e800476c717a5e58/55ecd02bc623d181e800476c717a5e58.log
+Delete 'heziah-blog' => 'assets/404.md.4a7e9d04.js' success
+Delete 'heziah-blog' => 'assets/404.md.4a7e9d04.lean.js' success
+Delete 'heziah-blog' => 'assets/app.1d9f12b7.js' success
+Delete 'heziah-blog' => 'assets/chunks/framework.78f59c79.js' success
+Delete 'heziah-blog' => 'assets/index.md.830618bf.js' success
+Delete 'heziah-blog' => 'assets/index.md.830618bf.lean.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.cf0553d9.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_beijing-jiaotong-university-course-automatically_index.md.cf0553d9.lean.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_static-blog-build_index.md.f8e1c9fb.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_static-blog-build_index.md.f8e1c9fb.lean.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_utility_index.md.bcec2b37.js' success
+Delete 'heziah-blog' => 'assets/posts_notion_utility_index.md.bcec2b37.lean.js' success
+Delete 'heziah-blog' => 'assets/tags.md.8e8d5b0f.js' success
+Delete 'heziah-blog' => 'assets/tags.md.8e8d5b0f.lean.js' success
+Delete 'heziah-blog' => 'log.html' success
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
