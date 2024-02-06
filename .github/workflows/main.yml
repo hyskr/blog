@@ -85,6 +85,7 @@ jobs:
         run: |
           INFO=$(cat $Tmp_File | sed 's/\[0m//g'| grep -Eo '(Total|Success|Failure|Skipped): +[0-9]+' | awk '{print $2}' | awk 'NR==1{Total=$1} NR==2{Success=$1} NR==3{Failure=$1} NR==4{Skipped=$1} END{printf "total=%d,suc=%d,fail=%d,skip=%d", Total, Success, Failure, Skipped}')
           Info=$INFO
-          URL=https://api.day.app/${{secrets.BARK_TOKEN}}/Github%20Action/$Info\?icon\=https://github.githubassets.com/favicons/favicon.png\&url\=$Log_Url\&group\=gh_action\&sound\=shake
-          curl $URL
+          curl -X POST https://api.pushbullet.com/v2/pushes -H 'Access-Token: ${{secrets.PUSH_TOKEN}}' -H 'Content-Type: application/json' -d '{"type": "note", "title": "blog deploy", "body": "'"$Info"'"}'
+          # URL=https://api.day.app/${{secrets.BARK_TOKEN}}/Github%20Action/$Info\?icon\=https://github.githubassets.com/favicons/favicon.png\&url\=$Log_Url\&group\=gh_action\&sound\=shake
+          # curl $URL
 
