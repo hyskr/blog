@@ -12,5 +12,12 @@
     ],
     "title": "beijing-jiaotong-university-course-automatically",
     "rtitle": "北京交通大学自动选课"
+  },
+  "537f1fb3-6549-4488-a4f0-3dd7ba1815f7": {
+    "files": [
+      "utility"
+    ],
+    "title": "utility",
+    "rtitle": "实用工具"
   }
 }
