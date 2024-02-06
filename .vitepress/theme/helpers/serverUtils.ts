@@ -137,6 +137,35 @@ export async function getPostLength() {
 }
 
 
+// export async function getTags(): Promise<Array<Tag>> {
+
+//     let posts = await getPosts({})
+//     let tags: Array<Tag> = []
+//     posts.map((p) => {
+//         if (!p) return null
+//         if (p.frontMatter.tags != null) {
+//             let tnames = tags.map(item => item.name)
+//             let ptags = p.frontMatter.tags
+//             ptags.map((pt) => {
+//                 let index = tnames.indexOf(pt)
+//                 if (index > -1) {
+//                     tags.at(index) != undefined ?
+//                         tags[index].count += 1 : null
+//                 } else {
+//                     let t: Tag = {
+//                         name: pt,
+//                         count: 1
+//                     }
+//                     tags.push(t)
+//                 }
+//             })
+//         }
+//     })
+
+//     tags.sort(_comparePostCount)
+
+//     return tags
+// }
 export async function getTags(): Promise<Array<Tag>> {
 
     let posts = await getPosts({})
@@ -149,8 +178,9 @@ export async function getTags(): Promise<Array<Tag>> {
             ptags.map((pt) => {
                 let index = tnames.indexOf(pt)
                 if (index > -1) {
-                    tags.at(index) != undefined ?
-                        tags[index].count += 1 : null
+                    if (tags[index] != undefined) {
+                        tags[index].count += 1
+                    }
                 } else {
                     let t: Tag = {
                         name: pt,
@@ -166,6 +196,7 @@ export async function getTags(): Promise<Array<Tag>> {
 
     return tags
 }
+
 
 function _comparePostCount(obj1, obj2) {
     return obj1.count < obj2.count ? 1 : -1;
