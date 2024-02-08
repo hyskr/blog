@@ -19,5 +19,12 @@
     ],
     "title": "utility",
     "rtitle": "实用工具"
+  },
+  "62f08d4b-29e5-4f4e-ada5-5addc5b99cbf": {
+    "files": [
+      "rust-study"
+    ],
+    "title": "rust-study",
+    "rtitle": "Rust Study"
   }
 }
