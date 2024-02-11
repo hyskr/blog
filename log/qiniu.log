@@ -1,17 +1,17 @@
-Sat Feb 10 09:10:26 CST 2024
+Sun Feb 11 09:17:34 CST 2024
  -------------Upload Result--------------
                Total:        33
              Success:         8
              Failure:         0
         NotOverwrite:         0
              Skipped:        25
-            Duration:  10.142557383s
+            Duration:   9.584114854s
  ----------------------------------------
 
 See upload log at path /home/runner/.qshell/qupload/55ecd02bc623d181e800476c717a5e58/55ecd02bc623d181e800476c717a5e58.log
 Delete 'heziah-blog' => 'log.html' success
  Listing local sync dir, this can take a long time for big directory, please wait patiently
- Walk `/home/runner/work/blog/blog/.vitepress/dist` start from 2024-02-10 09:10:26.692513286 +0800 CST m=+0.005300986
+ Walk `/home/runner/work/blog/blog/.vitepress/dist` start from 2024-02-11 09:17:34.180349662 +0800 CST m=+0.005424966
  File `404.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/404.html => heziah-blog : 404.html
  File `404.png` exists in bucket, hash match, ignore this upload
@@ -41,25 +41,25 @@ Delete 'heziah-blog' => 'log.html' success
  File `font.otf` exists in bucket, hash match, ignore this upload
  File `hashmap.json` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/hashmap.json => heziah-blog : hashmap.json
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/hashmap.json` => `heziah-blog : hashmap.json` success
  File `index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/index.html => heziah-blog : index.html
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/hashmap.json` => `heziah-blog : hashmap.json` success
  File `notion_logo.png` exists in bucket, hash match, ignore this upload
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/index.html` => `heziah-blog : index.html` success
  File `posts/notion/beijing-jiaotong-university-course-automatically/index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html => heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/index.html` => `heziah-blog : index.html` success
  File `posts/notion/rust-study/index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/rust-study/index.html => heziah-blog : posts/notion/rust-study/index.html
- File `posts/notion/static-blog-build/index.html` exists in bucket, but hash not match, go to upload
- Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html => heziah-blog : posts/notion/static-blog-build/index.html
  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/beijing-jiaotong-university-course-automatically/index.html` => `heziah-blog : posts/notion/beijing-jiaotong-university-course-automatically/index.html` success
  Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/rust-study/index.html` => `heziah-blog : posts/notion/rust-study/index.html` success
+ File `posts/notion/static-blog-build/index.html` exists in bucket, but hash not match, go to upload
+ Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html => heziah-blog : posts/notion/static-blog-build/index.html
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html` => `heziah-blog : posts/notion/static-blog-build/index.html` success
  File `posts/notion/utility/index.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html => heziah-blog : posts/notion/utility/index.html
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/static-blog-build/index.html` => `heziah-blog : posts/notion/static-blog-build/index.html` success
+ Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html` => `heziah-blog : posts/notion/utility/index.html` success
  File `tags.html` exists in bucket, but hash not match, go to upload
  Uploading file /home/runner/work/blog/blog/.vitepress/dist/tags.html => heziah-blog : tags.html
- Upload file `/home/runner/work/blog/blog/.vitepress/dist/posts/notion/utility/index.html` => `heziah-blog : posts/notion/utility/index.html` success
  Upload file `/home/runner/work/blog/blog/.vitepress/dist/tags.html` => `heziah-blog : tags.html` success
  -------------Upload Result--------------
                Total:        33
@@ -67,5 +67,5 @@ Delete 'heziah-blog' => 'log.html' success
              Failure:         0
         NotOverwrite:         0
              Skipped:        25
-            Duration:  10.142557383s
+            Duration:   9.584114854s
  ----------------------------------------
