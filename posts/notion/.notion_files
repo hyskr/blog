@@ -26,5 +26,12 @@
     ],
     "title": "rust-study",
     "rtitle": "Rust Study"
+  },
+  "fdb8ba35-218f-43f5-a3cf-3e8a93f907ab": {
+    "files": [
+      "the-level-of-logging"
+    ],
+    "title": "the-level-of-logging",
+    "rtitle": "日志级别"
   }
 }
