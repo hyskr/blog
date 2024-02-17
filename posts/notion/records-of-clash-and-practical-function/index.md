@@ -7,7 +7,7 @@ tags:
 description: 本博客介绍了利用TUN模式和相关配置解决软件不遵循系统代理设置的问题，包括启用服务模式、预处理配置和混合模式的使用方法。
 from_notion: https://www.notion.so/Clash-f6cc8a84568d4cbf9c7c5722d058aff4
 author: heziah
-last_edited_time: '2024-02-16 15:27:00.000'
+last_edited_time: '2024-02-16 15:28:00.000'
 ---
 ## TUN 模式
 
