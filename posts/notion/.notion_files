@@ -47,5 +47,12 @@
     ],
     "title": "records-of-clash-and-practical-function",
     "rtitle": "Clash实用功能的记录"
+  },
+  "9891fa33-5c93-4e8f-858e-b1e52bbe2e18": {
+    "files": [
+      "miller-modulated-subcarrier"
+    ],
+    "title": "miller-modulated-subcarrier",
+    "rtitle": "Miller 调制副载波"
   }
 }
