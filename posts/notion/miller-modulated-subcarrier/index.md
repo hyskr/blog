@@ -8,7 +8,7 @@ tags:
 description: Miller调制副载波使用Miller编码图和Miller信号状态图来生成编码信号，通过将副载波的波形与原波形相乘来实现编码。
 from_notion: https://www.notion.so/Miller-9891fa335c934e8f858eb1e52bbe2e18
 author: heziah
-last_edited_time: '2024-02-22 13:31:00.000'
+last_edited_time: '2024-02-22 13:39:00.000'
 ---
 ## Miller编码图
 
@@ -36,15 +36,9 @@ last_edited_time: '2024-02-22 13:31:00.000'
 
 ## Miller调制副载波
 
-[//]: # (column_list is not supported)
-
-	[//]: # (column is not supported)
-
-		![Miller_modulated_subcarrier](d9826263_Miller_modulated_subcarrier.webp)
-
-	[//]: # (column is not supported)
-
-		![Miller_modulated_subcarrier](ae13ff47_Miller_modulated_subcarrier.png)
-
 - 副载波编码就是用副载波的波形乘原波形，得到的就是编码后的波形。
+
+![Miller_modulated_subcarrier](ae13ff47_Miller_modulated_subcarrier.png)
+
+![Miller_modulated_subcarrier](8d148b7b_Miller_modulated_subcarrier.webp)
 
