@@ -1,5 +1,5 @@
 ---
-title: Miller 调制副载波
+title: Miller 调制副载波及频谱、功率谱计算
 date: '2024-02-22 13:20:00.000'
 tags:
 - 学习
@@ -8,7 +8,7 @@ tags:
 description: Miller调制副载波使用Miller编码图和Miller信号状态图来生成编码信号，通过将副载波的波形与原波形相乘来实现编码。
 from_notion: https://www.notion.so/Miller-9891fa335c934e8f858eb1e52bbe2e18
 author: heziah
-last_edited_time: '2024-02-22 13:39:00.000'
+last_edited_time: '2024-02-22 15:35:00.000'
 ---
 ## Miller编码图
 
@@ -41,4 +41,32 @@ last_edited_time: '2024-02-22 13:39:00.000'
 ![Miller_modulated_subcarrier](ae13ff47_Miller_modulated_subcarrier.png)
 
 ![Miller_modulated_subcarrier](8d148b7b_Miller_modulated_subcarrier.webp)
+
+## 频谱、功率谱
+
+### **频谱（Spectral Analysis）**:
+
+1. **连续信号的频谱**
+
+	对于连续时间信号 x(t)，其频谱可以通过傅里叶变换（FT）计算得到：
+
+	$ X(f) = int_{-\infty}^{+\infty} x(t)e^{-j2\pi ft}dt $
+
+	这里，X(f) 是信号 x(t) 在频域的表示，f 是频率。
+
+1. **离散信号的频谱**
+
+	对于离散时间信号 x[n]，使用离散傅里叶变换（DFT）：
+
+	$ X[k] = \sum_{n=0}^{N-1} x[n]e^{-j2\pi \frac{kn}{N}} $
+
+	其中，N 是信号样本的总数，k 是离散频率指标。
+
+### 功率谱求解
+
+功率谱密度（PSD）描述了信号功率如何随频率分布。
+
+	1. 对于连续信号，PSD可以通过信号的自相关函数的傅里叶变换计算得到。
+
+	1. 对于离散信号，可以使用周期图法或Welch方法估计PSD。
 

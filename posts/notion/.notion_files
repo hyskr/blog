@@ -50,9 +50,9 @@
   },
   "9891fa33-5c93-4e8f-858e-b1e52bbe2e18": {
     "files": [
-      "miller-modulated-subcarrier"
+      "miller-subcarrier-modulation-and-frequency-spectrum-power-spectrum-calculation"
     ],
-    "title": "miller-modulated-subcarrier",
-    "rtitle": "Miller 调制副载波"
+    "title": "miller-subcarrier-modulation-and-frequency-spectrum-power-spectrum-calculation",
+    "rtitle": "Miller 调制副载波及频谱、功率谱计算"
   }
 }
