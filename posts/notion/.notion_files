@@ -61,5 +61,12 @@
     ],
     "title": "miller-subcarrier-modulation-and-frequency-spectrum-power-spectrum-calculation",
     "rtitle": "Miller 调制副载波及频谱、功率谱计算"
+  },
+  "ad9a6bac-d918-456f-90c8-da2944d150aa": {
+    "files": [
+      "r-language-study-notes"
+    ],
+    "title": "r-language-study-notes",
+    "rtitle": "R语言学习笔记"
   }
 }
