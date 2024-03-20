@@ -5,7 +5,7 @@ tags: []
 description: ''
 from_notion: https://www.notion.so/R-ad9a6bacd918456f90c8da2944d150aa
 author: heziah
-last_edited_time: '2024-03-12 03:30:00.000'
+last_edited_time: '2024-03-19 02:42:00.000'
 ---
 ## 基本使用
 
@@ -370,4 +370,28 @@ seq函数是冒号运算符的推广。
 - `rep(c(1,3), each=2)`可以重复完一个元素后再重复另一元素，用`each=`选项， 结果相当于`c(1,1,3,3)`。
 
 有一点技术性的小问题： `1:5`和`seq(5)`的结果是整型（integer）的， `c(1,3,5)`和`seq(1, 5, by=2)`的结果是浮点型（double）的。
+
+### 逻辑运算函数
+
+比较运算符包括
+
+
+```plain text
+<   <=  >  >=  ==  !=  %in%
+```
+
+与NA比较产生NA，如
+
+
+```r
+c(1, NA, 3) > 2## [1] FALSE    NA  TRUENA == NA## [1] NA
+```
+
+用`is.na()`函数，用`is.finite()`判断向量每个元素是否Inf值。
+
+若`cond`是逻辑向量， 用`all(cond)`测试`cond`的所有元素为真； 用`any(cond)`测试`cond`至少一个元素为真。 
+
+函数`which()`返回真值对应的所有下标
+
+<br/>
 
