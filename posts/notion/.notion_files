@@ -68,5 +68,12 @@
     ],
     "title": "r-language-study-notes",
     "rtitle": "R语言学习笔记"
+  },
+  "3a4671e3-43c5-4e3b-97a1-bffc299b952c": {
+    "files": [
+      "bytehound-guidelines"
+    ],
+    "title": "bytehound-guidelines",
+    "rtitle": "bytehound使用指南"
   }
 }
