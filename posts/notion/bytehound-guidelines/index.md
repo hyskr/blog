@@ -1,15 +1,20 @@
 ---
 title: bytehound使用指南
 date: '2024-03-20 04:23:00.000'
-tags: []
-description: ''
+tags:
+- 工具
+- 内存分析
+- rust
+description: bytehound使用指南介绍了安装和使用方法，包括基本用法和高级用法。还提供了分析内存泄漏的示例代码和回溯打印的方法。
 from_notion: https://www.notion.so/bytehound-3a4671e343c54e3b97a1bffc299b952c
 author: heziah
-last_edited_time: '2024-03-20 04:39:00.000'
+last_edited_time: '2024-03-20 04:49:00.000'
 ---
 ## Install
 
 [bytehound](487c190c_bytehound.zip)
+
+[https://file.notion.so/f/f/05f1dd7a-9a77-43c1-938d-6db01688e616/7cce5871-e1f6-4e78-8b64-1dd61aa5fe47/bytehound.zip](https://file.notion.so/f/f/05f1dd7a-9a77-43c1-938d-6db01688e616/7cce5871-e1f6-4e78-8b64-1dd61aa5fe47/bytehound.zip?id=7650d40f-7c80-4bd9-a702-00dcd4d29e1a&table=block&spaceId=05f1dd7a-9a77-43c1-938d-6db01688e616&expirationTimestamp=1711000800000&signature=pq_t0nrZIgqT8-4LGxwvC3K-GEIIKijTd8r5ODcdFE8&downloadName=bytehound.zip)
 
 ## Usage
 
